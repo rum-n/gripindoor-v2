@@ -1,0 +1,21 @@
+{
+    "gyms":[
+       {
+          "name":"Sofia University Wall",
+          "web":"No website yet.",
+          "address":"Sveti Kliment Ohridski, 2 1504 Sofia",
+          "fb":"https://www.facebook.com/stenatasu",
+          "price": "2.5 EUR one time / 15 EUR per month",
+          "latlong":"42.69382,23.33604" 
+       },
+       {
+        "name":"Walltopia",
+        "web":"http://walltopiaclimbingcenter.eu",
+        "address":"Tsarigradsko shose 111V, 1784, Sofia",
+        "fb":"https://www.facebook.com/stenatasu",
+        "price": "Regular - 7.5 EUR<br>Mo - Fri until 16:00 - 6 EUR<br>Monthly card - 40 EUR<br>Card for 6 months - 180 EUR<br>Card for a year - 340 EUR",
+        "latlong":"42.6657641,23.3741886" 
+     }
+    ]
+ }
+ 

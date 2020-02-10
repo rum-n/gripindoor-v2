@@ -1,0 +1,228 @@
+body {
+    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+      "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+      "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+      "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.6;
+    &:focus,
+    &:hover {
+      opacity: 1;
+      color: #c03429;
+      text-decoration: none;
+    }
+  }
+  
+  hr {
+    width: 35%;
+    display: inline-block;
+    margin: 2em 0 2em 0;
+    background-color: #c03429;
+  }
+  
+  .main {
+    padding: 5% 15% 5% 15%;
+  }
+  
+  #map-wrapper {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+  }
+  
+  #gyms {
+      height: 100%;
+      width: 100%;
+  }
+  
+  .contact {
+      padding-left: 1em;
+      position: fixed;
+      padding-bottom: 25%;
+      z-index: 9999;
+  }
+  
+  .menu-item:hover {
+    color: #c03429;
+  }
+  
+  .logo {
+    /*padding: 0.5em;*/
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    z-index: 9999;
+  }
+  
+  .logo h5 {
+    text-align: center;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+      "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+      "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+      "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  }
+  
+  .logo h5:hover {
+    color: #c03429;
+  }
+  
+  .copyright {
+    font-family: "Helvetica", sans-serif;
+    color: grey;
+    font-size: 10pt;
+    padding: 1em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+  }
+  
+  .credits {
+    font-family: "Helvetica", sans-serif;
+    color: grey;
+    font-size: 10pt;
+    padding: 1em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+  }
+  
+  .social {
+    font-family: "Helvetica", sans-serif;
+    color: grey;
+    font-size: 10pt;
+    padding: 1em;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    z-index: 9999;
+  }
+  
+  /*LIST OF GYMS*/
+  
+  .list {
+    margin-left: 25%;
+    margin-right: 25%;
+    background: none;
+  }
+  
+  .gym-details {
+    color: #c03429;
+   /* padding-bottom: 2em;*/
+    padding-left: 1.5em;
+    padding-top: 2em;
+    padding-right: 1.5em;
+    display: inline-block;
+  }
+  
+  .gym-details-text {
+    color: #000;
+   /* padding-bottom: 2em;*/
+    padding-left: 1.5em;
+    padding-top: 2em;
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
+    display: inline-block;
+  }
+  
+  
+  #gym-entry {
+    padding-left: 1em;
+  }
+  
+  #SUwallAcc a{
+    color: #c03429;
+  }
+  
+  .leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
+	-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
+	-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
+	-o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
+	transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+
+.leaflet-cluster-spider-leg {
+	/* stroke-dashoffset (duration and function) should match with leaflet-marker-icon transform in order to track it exactly */
+	-webkit-transition: -webkit-stroke-dashoffset 0.3s ease-out, -webkit-stroke-opacity 0.3s ease-in;
+	-moz-transition: -moz-stroke-dashoffset 0.3s ease-out, -moz-stroke-opacity 0.3s ease-in;
+	-o-transition: -o-stroke-dashoffset 0.3s ease-out, -o-stroke-opacity 0.3s ease-in;
+	transition: stroke-dashoffset 0.3s ease-out, stroke-opacity 0.3s ease-in;
+}
+
+.leaflet-control-zoomhome a {
+    font: bold 18px "Lucida Console",Monaco,monospace;
+}
+
+a.leaflet-control-zoomhome-in,
+a.leaflet-control-zoomhome-out {
+  font-size: 1.5em;
+  line-height: 26px;
+}
+
+.marker-cluster-small {
+	background-color: rgba(244, 65, 51, 0.6);
+	}
+.marker-cluster-small div {
+	background-color: rgba(192, 52, 41, 0.6);
+	}
+
+.marker-cluster-medium {
+	background-color: rgba(241, 211, 87, 0.6);
+	}
+.marker-cluster-medium div {
+	background-color: rgba(240, 194, 12, 0.6);
+	}
+
+.marker-cluster-large {
+	background-color: rgba(253, 156, 115, 0.6);
+	}
+.marker-cluster-large div {
+	background-color: rgba(241, 128, 23, 0.6);
+	}
+
+	/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+	background-color: rgb(181, 226, 140);
+	}
+.leaflet-oldie .marker-cluster-small div {
+	background-color: rgb(110, 204, 57);
+	}
+
+.leaflet-oldie .marker-cluster-medium {
+	background-color: rgb(241, 211, 87);
+	}
+.leaflet-oldie .marker-cluster-medium div {
+	background-color: rgb(240, 194, 12);
+	}
+
+.leaflet-oldie .marker-cluster-large {
+	background-color: rgb(253, 156, 115);
+	}
+.leaflet-oldie .marker-cluster-large div {
+	background-color: rgb(241, 128, 23);
+}
+
+.marker-cluster {
+	background-clip: padding-box;
+	border-radius: 20px;
+	}
+.marker-cluster div {
+	width: 30px;
+	height: 30px;
+	margin-left: 5px;
+	margin-top: 5px;
+
+	text-align: center;
+	border-radius: 15px;
+	font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+.marker-cluster span {
+	line-height: 30px;
+	}
